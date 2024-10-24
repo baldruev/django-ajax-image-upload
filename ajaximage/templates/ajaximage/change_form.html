@@ -1,0 +1,7 @@
+{% extends ajax_change_form_template_extends %}
+
+{% block extrahead %}{{ block.super }}
+<script>
+  var ajaxImageUploadData = {{ data|safe }};
+</script>
+{% endblock %}
